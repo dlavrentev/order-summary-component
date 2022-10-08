@@ -1,10 +1,11 @@
-import logo from "./logo.svg";
+import logo from "./images/icon-music.svg";
+import illustration from "./images/illustration-hero.svg";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <div className="header"></div>
+      <img src={illustration} alt="illustration" className="header" />
       <div className="footer">
         <h1>Order Summary</h1>
         <p>
@@ -12,7 +13,9 @@ function App() {
           any device anywhere you like!
         </p>
         <div className="plan">
-          <div className="logo"></div>
+          <div className="logo">
+            <img src={logo} alt="Logo" />
+          </div>
           <div className="pay">
             <p>Annual Plan</p>
             <p>$59.99/year</p>
